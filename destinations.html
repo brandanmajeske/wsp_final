@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<title>Destinations</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link rel="stylesheet" href="css/main.css" />
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.min.js"></script>
+		<script type="text/javascript" src="scripts/map.js"></script>
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+	</head>
+	<body>
+		<div class="wrapper">
+			<header>
+				<nav>
+					<ul>
+						<li>
+							<a href="index.html">Home</a>
+						</li>
+						<li>
+							<a href="services.html">Services</a>
+						</li>
+						<li>
+							<a href="rates.html">Rates</a>
+						</li>
+						<li>
+							<a href="vehicles.html">Vehicles</a>
+						</li>
+						<li>
+							<a class="current_page" href="destinations.html">Destinations</a>
+						</li>
+						<li>
+							<a href="reservations.html">Reservations</a>
+						</li>
+					</ul>
+				</nav>
+				<div id="logo_container">
+					<a id="logo" href="index.html"><img src="images/logo.png" /></a>
+				</div>
+			</header>
+			<div class="container">
+				<div class="not_available_on_mobile"><h2>Map not available on mobile...</h2></div>
+				<div class="map_container">
+				<div class="map_content">
+					<!--airports-->
+					<a class="dot" service="Airports" destination="orlando_international" id="orlando_international"></a>
+					<a class="dot" service="Airports" destination="orlando_executive" id="orlando_executive"></a>
+					<a class="dot" service="Airports" destination="orlando_sanford" id="orlando_sanford"></a>
+					<!--attractions-->
+					<a class="dot" service="Attractions" destination="disney_world" id="disney_world"></a>
+					<a class="dot" service="Attractions" destination="universal_studios" id="universal_studios"></a>
+					<a class="dot" service="Attractions" destination="orlando_science_center" id="orlando_science_center"></a>
+					<!--convention-->
+					<a class="dot" service="Convention_Center" destination="orange_county_convention_center" id ="orange_county_convention_center"></a>
+					<a class="dot" service="Convention_Center" destination="peabody_orlando" id ="peabody_orlando"></a>
+					<a class="dot" service="Convention_Center" destination="marriott_orlando" id ="marriott_orlando"></a>
+					<!--port-->
+					<a class="dot" service="Port" destination="port_canaveral" id ="port_canaveral"></a>
+					<a class="dot" service="Port" destination="port_tampa" id ="port_tampa"></a>
+					<a class="dot" service="Port" destination="port_manatee" id ="port_manatee"></a>
+					<!--arena-->
+					<a class="dot" service="Sports_Arena" destination="amway_arena"  id ="amway_arena"></a>
+					<a class="dot" service="Sports_Arena" destination="kissimmee_sports_arena" id ="kissimmee_sports_arena"></a>
+					<a class="dot" service="Sports_Arena" destination="silver_spurs_arena" id ="silver_spurs_arena"></a>
+					<form id="mapForm" name="mapForm" class="form_service" method="post" action="">
+						<select name="service" id="service">
+							<option value="Airports">Airports</option>
+							<option value="Attractions">Attractions</option>
+							<option value="Convention_Center">Convention Centers</option>
+							<option value="Port">Ports</option>
+							<option value="Sports_Arena">Sports Arenas</option>
+							<option value="ALL" selected="selected">Show All Destinations</option>
+						</select>
+					</form>
+					<div class="detail_container">
+						<div class="destination_detail">
+							<h3>Choose a destination</h3>
+							<p>
+								Select a category from the menu.
+								<br />
+								Click on the map to view the destination details.
+							</p>
+						</div>
+					</div>
+				</div><!-- end map_content-->
+				</div><!--end map_container-->
+	
+				<div class="destination_detail_container">
+					<!-- airports -->
+					<div class="destination_detail" id="orlando_international">
+						<img class="destination_photo" src="images/destinations/airport.jpg" alt="orlando international" />
+						<div class="destination_info">
+							<h2>Airports</h2>
+							<h3>Orlando International</h3>
+							<p>
+								Orlando International is located in the business district of Orlando and is considered the second busiest airport in Florida, behind Miami International Airport. Orlando Int'l is a focus city for Southwest Airlines and JetBlue Airways.
+							</p>
+						</div>
+					</div>
+					<div class="destination_detail" id="orlando_sanford">
+						<img class="destination_photo" src="images/destinations/propeller.jpg" alt="orlando sanford" />
+						<div class="destination_info">
+							<h2>Airports</h2>
+							<h3>Orlando Sanford</h3>
+							<p>
+								Orlando Sanford International Airport sits on approximately 2000 acres, located in Seminole County, Florida. It has four runways and serves many regional and international carriers. Aerosim Flight Academy calls the airport home. 
+							</p>
+						</div>
+					</div>
+					<div class="destination_detail" id="orlando_executive">
+						<img class="destination_photo" src="images/destinations/plane_landing.jpg" alt="orlando executive" />
+						<div class="destination_info">
+							<h2>Airports</h2>
+							<h3>Orlando Executive</h3>
+							<p>
+								Orlando Executive is located in Orange County, Florida on 1055 acres, has two runways and serves many private businesses in the area. The airport is often used as the landing site for Marine One during Presidential visits.
+							</p>
+						</div>
+					</div>
+					<!-- end airports -->
+					<!-- attractions -->
+					<div class="destination_detail" id="disney_world">
+						<img class="destination_photo" src="images/destinations/disneyworld.jpg" alt="disney world" />
+						<div class="destination_info">
+							<h2>Attractions</h2>
+							<h3>Epcot<br />Disney World</h3>
+							<p>
+								Located near Orlando, Epcot is a theme park in the Walt Disney World Resort. The name Epoct comes from an acronym for a utopian city conceptualized by Walt Disney called the Experimental Prototype Community of Tomorrow. Epcot is the 5th most-visited theme park in the world.
+							</p>
+						</div>
+					</div>
+					<div class="destination_detail" id="universal_studios">
+						<img class="destination_photo" src="images/destinations/universal_studios.jpg" alt="universal studios" />
+						<div class="destination_info">
+							<h2>Attractions</h2>
+							<h3>Universal Orlando Resort</h3>
+							<p>
+								A popular destination for entertainment, Universal Orlando Resort is a theme park resort located in Orlando, Florida. The resort consists of Universal Studios Florida, Islands of Adventure, and Universal CityWalk along with multiple hotels. 
+							</p>
+						</div>
+					</div>
+					<div class="destination_detail" id="orlando_science_center">
+						<img class="destination_photo" src="images/destinations/orlando_science_center.jpg" alt="orlando science center" />
+						<div class="destination_info">
+							<h2>Attractions</h2>
+							<h3>Orlando Science Center</h3>
+							<p>
+								The Orlando Science Center is a popular attraction in Central Florida. The Science Center has four floors of exhibits, an observatory, and a domed theater for planetarium shows. Educational and great fun for all ages!
+							</p>
+						</div>
+					</div>
+					<!--end attractions -->
+					<!-- conventions -->
+					<div class="destination_detail" id="orange_county_convention_center">
+						<img class="destination_photo" src="images/destinations/orange_county_convention_center.jpg" alt="orange county convention center" />
+						<div class="destination_info">
+							<h2>Convention Centers</h2>
+							<h3>Orange County Convention Center</h3>
+							<p>
+								The OCCC is known as the primier convention center for Central Florida. It is the second largest convention center in the United States, behind McCormick Place in Chicago, Illinois. The convention center boasts over 2 million square feet of exhibition space!
+							</p>
+						</div>
+					</div>
+					<div class="destination_detail" id="peabody_orlando">
+						<img class="destination_photo" src="images/destinations/peabody_orlando.jpg" alt="peabody orlando" />
+						<div class="destination_info">
+							<h2>Convention Centers</h2>
+							<h3>The Peabody Hotel</h3>
+							<p>
+								The Peabody Hotel is situated near the Orange County Convention Center. The hotel is 31 stories tall, contains over 1600 rooms and is the second tallest building in Orlando. 
+							</p>
+						</div>
+					</div>
+					<div class="destination_detail" id="marriott_orlando">
+						<img class="destination_photo" src="images/destinations/marriott_orlando.jpg" alt="marriott orlando" />
+						<div class="destination_info">
+							<h2>Convention Centers</h2>
+							<h3>Orlando World Center Marriott</h3>
+							<p>
+								The 28 story Marriott hotel is the largest Marriott in the world. With access to a golf course, a large ballroom, six swimming pools and 10 restaurants and lounges, it is a great place for business meetings or vacationing.
+							</p>
+						</div>
+					</div>
+					<!-- end convention -->
+					<!-- ports -->
+					<div class="destination_detail" id="port_canaveral">
+						<img class="destination_photo" src="images/destinations/port_canaveral.jpg" alt="port canaveral" />
+						<div class="destination_info">
+							<h2>Ports</h2>
+							<h3>Port Canaveral</h3>
+							<p>
+								One of the busiest ports in the world, Port Canaveral, located on the eastern coast of Florida, is used by cruise and cargo ships. The port contains six cruise terminals and is the home port for ships from Disney Cruise Lines, Carnival Cruise Lines and Royal Caribbean.
+							</p>
+						</div>
+					</div>
+					<div class="destination_detail" id="port_tampa">
+						<img class="destination_photo" src="images/destinations/port_tampa.jpg" alt="port tampa" />
+						<div class="destination_info">
+							<h2>Ports</h2>
+							<h3>Port of Tampa</h3>
+							<p>
+								The port of Tampa is the largest port in Florida, located on the western coast of the state. The port is one of the most popular points of embarkation for Caribbean cruises and is home to cruise terminals for Carnival Cruise Line, Royal Caribbean Int'l, Holland America Line and Norwegian Cruise Line.
+
+							</p>
+						</div>
+					</div>
+					<div class="destination_detail" id="port_manatee">
+						<img class="destination_photo" src="images/destinations/port_manatee.jpg" alt="port manatee" />
+						<div class="destination_info">
+							<h2>Ports</h2>
+							<h3>Port Manatee</h3>
+							<p>
+								Port Manatee is one of the largest deepwater seaport in Florida and is served by mostly cargo ships. The port is 1100 acres in size and moves about 9 million tons of cargo per year.
+							</p>
+						</div>
+					</div>
+					<!-- end ports -->
+					<!-- arenas -->
+					<div class="destination_detail" id="amway_arena">
+						<img class="destination_photo" src="images/destinations/amway_arena.jpg" alt="amway arena" />
+						<div class="destination_info">
+							<h2>Arenas</h2>
+							<h3>Amway Center</h3>
+							<p>
+								The Amway Center is located in Downtown Orlando, and home to sports teams like the Orlando Magic and the Orlando Predators. The venue is also used to host concerts and events.
+							</p>
+						</div>
+					</div>
+					<div class="destination_detail" id="kissimmee_sports_arena">
+						<img class="destination_photo" src="images/destinations/kissimmee_sports_arena.jpg" alt="kissimmee sports arena" />
+						<div class="destination_info">
+							<h2>Arenas</h2>
+							<h3>Kissimmee Sports Arena</h3>
+							<p>
+								Kissimmee Sports Arena hosts the Monthly Saturday Rodeo, and other exciting events. The Banquet Hall has a 3200 square foot lounge available for special occasions, weddings, family or class reunions and conventions.
+							</p>
+						</div>
+					</div>
+					<div class="destination_detail" id="silver_spurs_arena">
+						<img class="destination_photo" src="images/destinations/silver_spurs_arena.jpg" alt="silver spurs arena" />
+						<div class="destination_info">
+							<h2>Arenas</h2>
+							<h3>Silver Spurs Arena</h3>
+							<p>
+								Located in the Osceola Heritage Park entertainment complex, Silver Spurs Arena is an 8000 seat venue and home to the Silver Spurs Rodeo. 
+							</p>
+						</div>
+					</div><!-- end arenas -->
+				</div><!--end content -->
+			</div><!-- end wrapper -->
+			<br class="clearfix"/>
+			<section class="section_seperator" id="service_descriptions">
+				<div class="service_subsection_secondary">
+					<h3>Taxi</h3>
+					<p>
+						Taxis can hold up to 4 passengers and are ideal transportation for trips to an airport, hotel, a sports arena or a night club.
+					</p>
+				</div>
+				<div class="service_subsection_secondary divider">
+					<h3>Sport Utility</h3>
+					<p>
+						SUVs can hold up to 7 passengers and are great for trips to many of Central Florida's theme parks and attractions.
+					</p>
+				</div>
+				<div class="service_subsection_secondary divider">
+					<h3>Sedan</h3>
+					<p>
+						Sedans can hold up to 4 passengers in comfort and style while traveling to places like the airport or convention center.
+					</p>
+				</div>
+				<div class="service_subsection_secondary divider">
+					<h3>Limousine</h3>
+					<p>
+						Limousines can hold up to 10 passengers and are ideal for any special occasion, like a wedding, or a night on the town.
+					</p>
+				</div>
+			</section>
+		</div><!--end container -->
+		</div> </div><!-- end wrapper -->
+		<footer>
+			<div id="footer_container">
+				<div id="footer_nav_container">
+					<ul id="footer_nav">
+						<li>
+							<a href="index.html">Home</a>
+						</li>
+						<li>
+							<a href="services.html">Services</a>
+						</li>
+						<li>
+							<a href="rates.html">Rates</a>
+						</li>
+						<li>
+							<a href="vehicles.html">Vehicles</a>
+						</li>
+						<li>
+							<a href="destinations.html">Destinations</a>
+						</li>
+						<li>
+							<a href="reservations.html">Reservations</a>
+						</li>
+					</ul>
+				</div>
+				<p id="copyright">
+					&copy;2012 Orlando Tropical Transport
+				</p>
+			</div>
+		</footer>
+	</body>
+</html>

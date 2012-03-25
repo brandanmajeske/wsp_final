@@ -1,0 +1,1334 @@
+/* Project CSS File */
+
+/*================== CSS Reset =======================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*=====================================================*/
+
+.clearfix {
+	clear: both;
+}
+a img {
+	border: none;
+}
+body {
+	background: url('../images/bg.png') repeat-x;
+	font: .9em/1.25 Tahoma, Arial, sans-serif;
+	color: #333;
+	width: 100%;
+	margin: 0;
+}
+.content_seperator {
+	height: 20px;
+	background: url('../images/line-shadow-960.png') no-repeat;
+	margin-top: 20px;
+}
+.content_seperator p {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.wrapper {
+	max-width: 960px;
+	padding: 0 3.125%; /*(30/960px)*/
+	margin: 0 auto;
+}
+.content, .container {
+	width: 100%;
+	margin-top: 25px;
+}
+header {
+	height: 75px;
+	width: 100%;
+}
+#logo_container {
+	width: 19.2307692%; /*175/910*/
+	margin-top: 10px;
+	float: left;
+}
+#logo img {
+	max-width: 100%;
+}
+nav {
+	height: 75px;
+	float: right;
+	width: 74%; /*735px/910px*/
+	text-transform: uppercase;
+}
+nav ul li {
+	display: block;
+	float: left;
+	list-style: none;
+	font: 1.1em/1.5 Tahoma, Geneva, sans-serif;
+	margin-top: 25px;
+	margin-left: 2.7210884%; /*20/735px*/
+	text-shadow: 1px 1px 0px #999;
+	opacity: .85;
+	padding: 0px;
+	-webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+}
+nav ul li:hover {
+	opacity: 1;
+	text-decoration: none;
+	border-top: none;
+}
+nav li a:link {
+	margin: 0 10px;
+	padding-top: 2px;
+	color: #fff;
+	border-top: 1px groove rgba(255,255,255,.5);
+	text-decoration: none;
+}
+nav li a:visited {
+	color: #fff;
+	margin: 0 10px;
+	padding-top: 2px;
+	color: #fff;
+	border-top: 1px groove rgba(255,255,255,.5);
+	text-decoration: none;
+}
+nav li a:hover {
+	color: #000;
+	text-decoration: none;
+	background: #fbed21;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	border-top: none !important;
+	padding: 2px 10px;
+	margin: 0;
+}
+nav li a.current_page:link, nav li a.current_page:visited {
+	color: #fff;
+	text-decoration: none;
+	background: #0084ff;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	border-top: none !important;
+	padding: 2px 10px;
+	margin: 0;
+}
+.contact_number {
+	font-weight: bold;
+}
+/*================================= Marquee styles ==================================================*/
+
+#marquee_header {
+	float: right;
+	width: 356px;
+	margin: 25px 20px 0 0;
+}
+#marquee_header h1 {
+	font: bold 1.75em Tahoma, Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+	color: #0084FF;
+	text-shadow: 1px 1px 0px #fff;
+}
+#marquee_header h2 {
+	font: bold 1.5em/1.25 'Lucida Sans Unicode', Courier, Arial;
+	margin: 0;
+	padding: 0;
+	color: #333;
+	text-shadow: 1px 1px 0px #fff;
+}
+#marquee_header p {
+	font: 1.25em/1.35 Arial, sans-serif;
+	margin-top: 10px;
+}
+a:link {
+	color: #0084FF;
+}
+a:visited {
+	color: #0084FF;
+}
+a:hover {
+	color: #555;
+}
+a:active {
+	color: #000;
+}
+.marquee_container {
+	position: relative;
+	width: 544px; /*544px/910px*/
+	height: 330px;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	border: 5px solid rgba(180,180,180, .5);
+	clear: left;
+}
+.marquee_photo {
+	width: 544px;
+	height: 330px;
+}
+.marquee_photos {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	display: none;
+}
+.marquee_caption {
+	position: absolute;
+	top: 290px;
+	left: 0px;
+	width: 544px;
+	margin: 0;
+	padding: 15px 0 10px 0;
+	color: #fff;
+	font-family: 'Lucida Sans Unicode', Tahoma, Arial, sans-serif;
+	background: url('../images/template/marquee_caption.png') no-repeat 0 0;
+}
+.marquee_caption_content {
+	width: 430px;
+	padding: 0px 0px 0px 20px;
+}
+.marquee_caption h2 {
+	font-size: 1.15em;
+	text-transform: uppercase;
+	margin: 15px 0px 0px 0px;
+	color: #fff;
+}
+.marquee_caption_content p {
+	margin-bottom: 10px;
+	color: #fff;
+	font: 1.1em/1.2 'Lucida Sans Unicode', Tahoma, sans-serif;
+}
+.marquee_caption_content a {
+	color: #fc0;
+}
+.marquee_caption_content a:hover {
+	color: #0084ff;
+}
+.marquee_nav {
+	position: absolute;
+	width: 240px;
+	top: 295px;
+	right: 20px;
+	text-align: right;
+}
+.marquee_nav a {
+	display: inline-block;
+	height: 20px;
+	width: 20px;
+	margin-left: 5px;
+	background: url('../images/template/nav_buttons.png') no-repeat;
+	cursor: pointer;
+}
+.marquee_nav a:hover {
+	background-position: -25px 0;
+}
+.marquee_nav a.selected {
+	background-position: -50px 0;
+}
+.marquee_panels {
+	display: none;
+}
+.marquee_container.autoplay .marquee_nav a {
+	opacity: .4;
+	filter: alpha(opacity=40)
+}
+.marquee_container.autoplay .marquee_nav a.selected {
+	opacity: 1;
+	filter: alpha(opacity=100)
+}
+/*================================= Page 1 Sub Section 1 ============================================*/
+/*section {
+ width: 100%;
+ overflow: auto;
+ }*/
+
+.service_subsection a:link, .service_subsection a:visited {
+	color: #0084FF;
+}
+.service_subsection a:hover {
+	color: #555555;
+}
+.service_subsection a:active {
+	color: #000000;
+}
+.section_seperator {
+	width: 100%;
+	overflow: auto;
+}
+.service_subsection {
+	width: 36.2637363%; /*330px/910px*/
+	float: left;
+	border-right: 2px groove rgba(0,0,0,.2);
+	padding: 0px 5px 10px 0px;
+	margin-right: 20px;
+}
+.service_subsection h3 {
+	width: 330px;
+	font: bold 1.15em Tahoma, Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	color: #004b91;
+	text-shadow: 0px 1px 0px #fff;
+}
+.service_subsection p {
+	width: 310px; /*310px/910px*/
+	font: .9em/1.4 Arial, Helvetica, sans-serif;
+	letter-spacing: .5px;
+}
+.sub_section_img_container {
+	display: block;
+	width: 28.5714286%; /*100px*/
+	float: left;
+	border-radius: 16px;
+	-webkit-border-radius: 16px;
+	border: 3px inset #fff;
+	box-shadow: 1px 2px 3px rgba(0,0,0,0.7);
+	margin: 0px 15px 5px 0px;
+}
+.service_subsection img {
+	max-width: 100%;
+	float: left;
+	border-radius: 16px;
+	-webkit-border-radius: 16px;
+}
+#special_offers {
+	float: right;
+}
+#special_offers h3 {
+	font: bold 1.15em Tahoma, Arial, sans-serif;
+	text-transform: uppercase;
+	color: #004b91;
+	text-shadow: 0px 1px 0px #fff;
+}
+#special_offers p {
+	font: .9em/1.4 Arial, Helvetica, sans-serif;
+	letter-spacing: .5px;
+	width: 205px;
+}
+#special_offers a:link, #special_offers a:visited {
+	font: .9em/1.4 Arial, Helvetica, sans-serif;
+	color: #0084FF;
+}
+#special_offers a:hover {
+	color: #555555;
+}
+#special_offers a:active {
+	color: #000;
+}
+/*================================= Page 1 Sub Section 2 ============================================*/
+
+#service_descriptions {
+	background-color: silver;
+	border: 1px groove rgba(50,50,50,.5);
+	box-shadow: 0px -2px 4px rgba(50,50,50,.25);
+	background-image: linear-gradient(bottom, #939393 30%, #b4b4b4 95%);
+	background-image: -o-linear-gradient(bottom, #939393 30%, #b4b4b4 95%);
+	background-image: -moz-linear-gradient(bottom, #939393 30%, #b4b4b4 95%);
+	background-image: -webkit-linear-gradient(bottom, #939393 30%, #b4b4b4 95%);
+	background-image: -ms-linear-gradient(bottom, #939393 30%, #b4b4b4 95%);
+	background-image: -webkit-gradient(
+	linear,	left bottom, left top,
+	color-stop(0.095, #b4b4b4),
+	color-stop(0.30, #939393));
+}
+.service_subsection_secondary {
+	width: 17.6813187%; /*170px*/
+	float: left;
+	padding: 15px 0px 15px 25px;
+	margin: 20px;
+}
+.service_subsection_secondary h3 {
+	font: bold 1.15em 'ChunkFiveRegular', sans-serif;
+	margin-bottom: 5px;
+	text-transform: uppercase;
+	color: #004b91;
+	text-shadow: 0px 1px 0px #fff;
+}
+.service_subsection_secondary p {
+	font: 1em Arial, Helvetica, sans-serif;
+	color: #222;
+	text-shadow: 0px 1px 0px rgba(255,255,255,.7);
+}
+.divider {
+	border-left: 1px groove rgba(250,250,250,0.85);
+}
+/*================================= Footer ============================================*/
+
+footer {
+	box-shadow: 0px -1px 4px rgba(0,0,0, .6);
+	height: 60px;
+	overflow: auto;
+	background: #313131;
+	background: url('../images/footer_bg.jpg') repeat-x 0 0;
+	color: #fff;
+	font: .8em Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+#footer_container {
+	max-width: 910px;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+#footer_nav_container {
+	float: right;
+	width: 60%;
+	padding: 0;
+	margin: 0;
+}
+#footer_nav {
+	float: right;
+	list-style: none;
+}
+#footer_nav ul li a {
+	margin-left: 20px;
+	padding: 0px;
+}
+#footer_nav li {
+	display: inline-block;
+	margin: 5px 0px 0px 25px;
+	padding: 0;
+	list-style: none;
+}
+#footer_nav li a:link {
+	color: #fff;
+	opacity: .5;
+}
+#footer_nav li a:visited {
+	color: #fff;
+	opacity: .5;
+}
+#footer_nav li a:hover {
+	color: #fff;
+	opacity: 1;
+}
+#footer_nav li a:active {
+	color: #fff;
+	opacity: .75;
+}
+#copyright {
+	float: left;
+	padding-top: 5px;
+}
+/*====================================== Services/Vehicles CSS =====================================*/
+
+#services_vehicles_page_content {
+	padding: 0px 30px 0px 30px;
+	color: #222;
+}
+
+.services_vehicles_container {
+	width: 410px;
+	float: left;
+	padding:0px 15px 0px 15px;
+	border-top: 1px solid #999;
+	margin-bottom: 25px;
+	box-shadow: 0px -1px 0px #fff;
+	-moz-box-shadow: 0px -1px 0px #fff;
+	-webkit-box-shadow: 0px -1px -0px #fff;
+	-o-box-shadow: 0px -1px 0px #fff;
+}
+
+.services_vehicles_page_seperator {
+	border-left: 1px solid #999;
+}
+
+.services_vehicles_page_img_container {
+	float: left;
+	margin: 20px 15px 20px 0px;
+	border-radius: 16px;
+	border: 1px solid #000;
+
+	display: block;
+	width: 150px; 
+	float: left;
+	border-radius: 16px;
+	-webkit-border-radius: 16px;
+	border: 3px solid #999;
+	box-shadow: 1px 2px 3px rgba(0,0,0,0.7);
+
+}
+
+.services_vehicles_page_img_container img {
+	max-width: 100%;
+	float: left;
+	border-radius: 16px;
+	-webkit-border-radius: 16px;
+}
+
+.services_vehicles_container h3 {
+	float: left;
+	margin: 20px 0px 20px 25px;
+	font: 1.25em/1.4  Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	color: #0084FF;
+	text-shadow: 0px 1px 0px #fff;
+	
+}
+
+.services_vehicles_container ul {
+	float: left;
+	list-style: disc;
+	list-style-position: inside;
+	margin-left: 25px;
+	line-height: 2em;
+	
+}
+
+.services_vehicles_container p {
+	clear: both;
+}
+
+
+/*====================================== Rates CSS =====================================*/
+
+#rates_content {
+	width: 100%;
+	overflow: auto;
+}
+.rates_image_container {
+	float: left;
+	width: 45%;
+	margin: 25px 0 25px 25px;
+	border-radius: 16px;
+	-moz-border-radius: 16px;
+	-webkit-border-radius: 16px;
+	-o-border-radius: 16px;
+}
+.rates_image_container img {
+	max-width: 100%;
+	box-shadow: 2px 2px 5px #000;
+}
+.specials_image_container {
+	margin: 25px;
+	width: 92.5%;
+}
+.specials_image_container img {
+	max-width: 100%;
+	box-shadow: 2px 2px 5px #000;
+}
+/*====================================== Map CSS =======================================*/
+
+.not_available_on_mobile {
+	display: none;
+}
+.map_container {
+	background: rgba(1,108,165,.3);
+	height: 600px;
+	padding-top: 10px;
+	border-radius: 16px;
+	border: 1px solid #fff;
+}
+.map_content {
+	background: url(../images/florida.png) no-repeat 200px 0px;
+	background-attachment: scroll;
+	height: 600px;
+	width: 100%;
+	float: left;
+	position: relative;
+	color: #fff;
+	overflow: visible;
+}
+.map_content a.dot {
+	background: url(../images/dots.png) no-repeat 0px 0px;
+	height: 20px;
+	width: 14px;
+	display: block;
+	cursor: pointer;
+	position: absolute;
+}
+.map_content a.dot:hover {
+	background-position: 0px -20px;
+}
+.map_content a.dot.selected {
+	background-position: 0px -40px;
+}
+.map_content .form_service {
+	position: absolute;
+	top: 465px;
+	left: 220px;
+}
+.map_content .detail_container {
+	position: absolute;
+	width: 270px;
+	height: 270px;
+	top: 155px;
+	left: 220px;
+}
+.map_content .destination_detail {
+	position: relative;
+	top: 0px;
+	width: 270px;
+	padding: 3%;
+	border: 1px solid #000;border-top 1px solid #000;
+	background: #FFFFFF;
+	background: rgba(255,255,255,.85);
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	box-shadow: 2px 2px 2px rgba(50,50,50,.5);
+}
+.map_content .destination_detail h3 {
+	text-transform: uppercase;
+	font: 1.1em Arial, Helvetica, sans-serif;
+}
+.map_content .destination_detail .destination_photo {
+	float: left;
+	margin: 0px 15px 15px 0px;
+	border: 1px solid #fff;
+	border-radius: 8px;
+	box-shadow: 2px 2px 2px #999;
+	-webkit-box-shadow: 2px 2px 2px #999;
+	-moz-box-shadow: 2px 2px 2px #999;
+	-webkit-border-radius: 8px;
+	color: #333;
+}
+.map_content .destination_detail .destination_photo img {
+	width: 75px;
+	height: 75px;
+}
+.destination_info h2 {
+	margin: 0px;
+	font: bold 1em/1.25 'Share-Regular';
+	text-transform: uppercase;
+	color: #999;
+	text-shadow: 0px 1px 0px #fff;
+}
+.destination_info h3 {
+	margin: 0px 0px 12px 0px;
+	font: bold .9em/1.2 'RopaSansRegular' Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	color: #0084ff;
+	text-shadow: 0px 1px 0px #fff;
+}
+.map_content, .destination_info p {
+	margin: 0px 0px 12px 0px;
+	color: #222;
+	clear: both;
+	font: 1em/1.2 'RopaSansRegular' Arial, Helvetica, sans-serif;
+}
+.destination_detail_container {
+	display: none;
+}
+/*=============== airport dots ====================*/
+#orlando_international {
+	top: 230px;
+	left: 645px;
+}
+#orlando_executive {
+	top: 210px;
+	left: 640px;
+}
+#orlando_sanford {
+	top: 190px;
+	left: 642px;
+}
+/*=============== attractions dots ================*/
+
+#disney_world {
+	top: 235px;
+	left: 620px;
+}
+#universal_studios {
+	top: 236px;
+	left: 635px;
+}
+#orlando_science_center {
+	top: 225px;
+	left: 655px;
+}
+/*============== convention center dots ===============*/
+
+#orange_county_convention_center {
+	top: 235px;
+	left: 655px;
+}
+#peabody_orlando {
+	top: 243px;
+	left: 644px;
+}
+#marriott_orlando {
+	top: 185px;
+	left: 653px;
+}
+/*=================== port dots ========================*/
+
+#port_canaveral {
+	top: 220px;
+	left: 700px;
+}
+#port_tampa {
+	top: 270px;
+	left: 565px
+}
+#port_manatee {
+	top: 295px;
+	left: 550px
+}
+/*=================== arena dots ========================*/
+
+#amway_arena {
+	top: 230px;
+	left: 645px;
+}
+#kissimmee_sports_arena {
+	top: 270px;
+	left: 630px;
+}
+#silver_spurs_arena {
+	top: 267px;
+	left: 649px;
+}
+/*====================================== Form CSS ======================================*/
+
+#form_container {
+	background: rgba(1,108,165,.3);
+	width: 90%; /*765px/910px*/;
+	overflow: auto;
+	border-radius: 16px;
+	border: 1px solid #fff;
+	box-shadow: 0px 2px 5px rgba(50,50,50,.5);
+	padding: 3%;
+	text-shadow: 0px 1px 0px #fff;
+	margin: 0 auto 15px auto;
+}
+#form_header {
+	font: 2em/1.5 "ShareRegular", "Share", Arial;
+	color: #004B91;
+	text-shadow: 1px 1px 0px #fff;
+	padding-left: 2.5%;
+}
+/*=====================  Customer Service Agent Div ====================*/
+section.cta {
+	float: left;
+	width: 43%;
+	margin-left: 5%;
+}
+#agent_image_container {
+	width: 100%;
+	margin: 0 auto;
+}
+#agent_image {
+	margin: 15px 0px 0px 3%;
+}
+#agent_image h3 {
+	font: 1.5em/1.5 "ShareRegular", "Share", Arial;
+}
+#agent_image p {
+	clear: left;
+}
+.cta img {
+	max-width: 100%;
+	border-radius: 5px;
+	box-shadow: 1px 1px 5px #999;
+}
+/*=================== Form ===========================*/
+
+section#form_seperator {
+	width: 50%;
+	float: left;
+}
+form#reservation_form {
+	width: 100%;
+	margin: auto;
+	padding-left: 30px;
+	font: 1.2em/1.4 Tahoma, Arial, sans-serif;
+}
+:invalid {
+	background: #FFF2F2;
+	border: 1px solid #BA0000;
+}
+:valid {
+	background: #fff;
+	border: 1px solid #0084ff;
+}
+:required {
+	background: #FFFFF0;
+}
+label {
+	float: left;
+	clear: left;
+	color: #555;
+	padding-top: 2%;
+	font-size: 1.25em !important;
+}
+input {
+	font: .9em/1.25 Tahoma, Arial, sans-serif;
+}
+.vehicle_selector label {
+	float: left;
+}
+#vehicle {
+	float: left;
+	clear: left;
+	margin-top: 25px;
+}
+#submit_button {
+	margin-top: 25px;
+	width: 150px;
+	height: 50px;
+}
+.name label {
+	float: left;
+	clear: left;
+}
+.name input#name_first {
+	width: 40%;
+	float: left;
+	display: inline;
+	clear: left;
+}
+.name input#name_last {
+	width: 40%;
+	float: left;
+	margin-left: 3.4642032%;
+}
+.email input {
+	width: 84%;
+	float: left;
+	clear: left;
+}
+.phone input {
+	width: 84%;
+	float: left;
+	clear: left;
+}
+.date_time label {
+	float: left;
+}
+.date_time label#time_label {
+	float: left;
+	clear: none !important;
+	margin-left: 15.0115473%;
+}
+.date_time input#datepicker {
+	width: 40%;
+	float: left;
+	display: inline;
+	clear: left;
+}
+.date_time input#pickup_time {
+	width: 40%;
+	float: left;
+	margin-left: 15px;
+}
+.trip {
+	float: left;
+	clear: left;
+	display: inline;
+}
+.trip input {
+	display: inline;
+	margin: 10px 20px 10px 0px;
+	padding-bottom: 2px;
+	vertical-align: top;
+}
+.trip ul {
+	margin: 5px 0px 0px 0px;
+}
+.trip ul li {
+	display: inline-block;
+	margin: 0 35px 0 0;
+	list-style-type: none;
+	list-style-position: inside;
+}
+.trip label {
+	vertical-align: bottom;
+	padding-left: 2px;
+}
+.locations label {
+	float: left;
+	clear: left;
+}
+.locations input {
+	float: left;
+	clear: left;
+	width: 85%;
+}
+#from_to_suggestions {
+	display: none;
+}
+#passenger_count input {
+	float: left;
+	clear: left;
+	width: 40%;
+}
+#vehicle {
+	float: left;
+	width: 40%;
+	font: .9em Arial, Helvetica, sans-serif;
+}
+#submit_button {
+	float: left;
+	clear: left;
+	margin-bottom: 20px;
+	display: inline-block;
+	height: 40px;
+	width: 30%;;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 5px;
+	font: .75em Arial, Helvetica, sans-serif;
+	color: #222;
+	text-shadow: 0px 1px 0px #fff;
+	border: 1px solid #999;
+	border-radius: 15px;
+	text-decoration: none;
+	background-color: #FBED21;
+	background-image: linear-gradient(bottom, #FFF500 7%, #FFFA73 45%, #FFFCBD 95%);
+	background-image: -o-linear-gradient(bottom, #FFF500 7%, #FFFA73 45%, #FFFCBD 95%);
+	background-image: -moz-linear-gradient(bottom, #FFF500 7%, #FFFA73 45%, #FFFCBD 95%);
+	background-image: -webkit-linear-gradient(bottom, #FFF500 7%, #FFFA73 45%, #FFFCBD 95%);
+	background-image: -ms-linear-gradient(bottom, #FFF500 7%, #FFFA73 45%, #FFFCBD 95%);
+	background-image: -webkit-gradient(
+	linear,	left bottom, left top,
+	color-stop(0.095, #FFFCBD),
+	color-stop(0.45, #FFFA73),
+	color-stop(0.77, #FFF500));
+}
+#submit_button:hover {
+	box-shadow: 0px 0px 4px #0084ff;
+}
+#submit_button:active {
+	text-decoration: none;
+	background-image: linear-gradient(bottom, #FFFCBD 7%, #FFFB8C 45%, #FFF500 95%);
+	background-image: -o-linear-gradient(bottom, #FFFCBD 7%, #FFFB8C 45%, #FFF500 95%);
+	background-image: -moz-linear-gradient(bottom, #FFFCBD 7%, #FFFB8C 45%, #FFF500 95%);
+	background-image: -webkit-linear-gradient(bottom, #FFFCBD 7%, #FFFB8C 45%, #FFF500 95%);
+	background-image: -ms-linear-gradient(bottom, #FFFCBD 7%, #FFFB8C 45%, #FFF500 95%);
+	background-image: -webkit-gradient(
+	linear,	left top, left bottom,
+	color-stop(0.095, #FFF500),
+	color-stop(0.45, #FFFB8C),
+	color-stop(0.77, #FFFCBD));
+}
+/*=== End Form CSS ===*/
+
+/* =================== Media Queries =================== */
+@media screen and (min-width: 960px) and (max-width: 1020px) {
+
+	nav {
+		width: 75%;
+	}
+	nav ul li {
+		font-size: 1em;
+	}
+	#marquee_header {
+		width: 34%;
+	}
+	#marquee_header h1 {
+		font-size: 1.5em;
+	}
+	#marquee_header h2 {
+		font-size: 1.35em;
+	}
+	#marquee_header p {
+		font-size: 1.1em;
+	}
+	#special_offers {
+		float: left;
+		width: 20%;
+	}
+	#special_offers h3 {
+		font-size: 1.1em;
+	}
+	.service_subsection {
+		margin-right: 5px;
+		padding-right: 0px;
+	}
+	.service_subsection_secondary {
+		padding: 5px;
+	}
+	.service_subsection_secondary.divider {
+		border: none;
+	}
+}
+.services_vehicles_container.services_vehicles_page_seperator {
+	border-left: none;
+}
+.not_available_on_mobile {
+	display: none;
+}
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media screen and (min-width: 768px) and (max-width: 959px) {
+
+	#logo {
+		display: block;
+		width: 100%;
+		clear: right;
+	}
+	nav {
+		width: 80%;
+	}
+	nav ul li {
+		font-size: .87em;
+	}
+	#marquee_header {
+		float: left;
+		width: 75%;
+	}
+	.sub_section_img_container {
+		width: 22%;
+	}
+	#special_offers {
+		clear: left;
+		float: left;
+		font-size: 1em;
+	}
+	.service_subsection {
+		border-right: none;
+		font-size: 1em;
+		width: 50%;
+		clear: right;
+	}
+	#service_descriptions {
+		width: 80%;
+		margin: 0 auto;
+	}
+	.service_subsection_secondary {
+		padding: 5px;
+		margin: 15px;
+	}
+	.service_subsection_secondary.divider {
+		border: none;
+	}
+	.services_vehicles_container {float; left;
+		margin-left: 5%;
+	}
+	.services_vehicles_container.services_vehicles_page_seperator {
+		border-left: none;
+		float: right;
+		margin-right: 5%;
+	}
+	.not_available_on_mobile {
+		display: none;
+	}
+}/*END TABLET*/
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+	body {
+		background-image: none;
+	}
+	header {
+		background: #313131;
+		height: 265px;
+	}
+	#logo {
+		display: none;
+	}
+	nav {
+		background: url(../images/logo.png) no-repeat 50% 0px;
+		width: 100%;
+		clear: both;
+		overflow: visible;
+	}
+	nav ul li {
+		font-size: .85em;
+		float: none;
+	}
+	#marquee_header {
+		float: left;
+		width: 75%;
+		margin-left: 5%;
+	}
+	#marquee_header h1 {
+		font-size: 1.35em;
+	}
+	#marquee_header h2 {
+		font-size: 1.15em;
+	}
+	#marquee_header p {
+		font-size: 1em;
+	}
+	.marquee_container {
+		display: none;
+	}
+	.sub_section_img_container {
+		width: 22%;
+	}
+	#special_offers {
+		clear: left;
+		float: left;
+		font-size: .8em;
+	}
+	.service_subsection {
+		border-right: none;
+		font-size: .8em;
+		width: 50%;
+		clear: right;
+		margin-left: 5%;
+	}
+	#special_offers {
+		margin-left: 5%;
+	}
+	#service_descriptions {
+		width: 80%;
+	}
+	#service_descriptions {
+		width: 100%;
+		margin: 0 auto;
+	}
+	.service_subsection_secondary {
+		width: 80%;
+	}
+	.service_subsection_secondary.divider {
+		border: none;
+	}
+	.services_vehicles_container {float; left;
+		font-size: .85em;
+		padding: 0;
+	}
+	.services_vehicles_container.services_vehicles_page_seperator {
+		border-left: none;
+		float: left;
+	}
+	#copyright {width 100%;
+		margin-left: 5%;
+	}
+	#footer_nav {
+		display: none;
+	}
+	#reservation_form {
+		font-size: .85em;
+	}
+	label {
+		font-size: .85em !important;
+	}
+	#reservation_form input {
+		font-size: .7em !important;
+	}
+	#vehicle {
+		font-size: .7em;
+	}
+	/*==========================Mobile Map ================================*/
+	.not_available_on_mobile {
+		display: none;
+	}
+	.map_content {
+		background: url(../images/florida.png) no-repeat 0px 0px;
+		background-attachment: scroll;
+		height: 600px;
+		width: 100%;
+		float: left;
+		position: relative;
+		color: #fff;
+		overflow: visible;
+	}
+	.map_content .form_service {
+		position: absolute;
+		top: 465px;
+		left: 20px;
+	}
+	.map_content .detail_container {
+		position: absolute;
+		width: 270px;
+		height: 270px;
+		top: 155px;
+		left: 20px;
+		color: #000;
+	}
+	/*=============== airport dots ====================*/
+	#orlando_international {
+		top: 230px;
+		left: 445px;
+	}
+	#orlando_executive {
+		top: 210px;
+		left: 440px;
+	}
+	#orlando_sanford {
+		top: 190px;
+		left: 442px;
+	}
+	/*=============== attractions dots ================*/
+
+	#disney_world {
+		top: 235px;
+		left: 420px;
+	}
+	#universal_studios {
+		top: 236px;
+		left: 435px;
+	}
+	#orlando_science_center {
+		top: 225px;
+		left: 455px;
+	}
+	/*============== convention center dots ===============*/
+
+	#orange_county_convention_center {
+		top: 235px;
+		left: 455px;
+	}
+	#peabody_orlando {
+		top: 243px;
+		left: 444px;
+	}
+	#marriott_orlando {
+		top: 185px;
+		left: 453px;
+	}
+	/*=================== port dots ========================*/
+
+	#port_canaveral {
+		top: 220px;
+		left: 500px;
+	}
+	#port_tampa {
+		top: 270px;
+		left: 365px
+	}
+	#port_manatee {
+		top: 295px;
+		left: 350px
+	}
+	/*=================== arena dots ========================*/
+
+	#amway_arena {
+		top: 230px;
+		left: 445px;
+	}
+	#kissimmee_sports_arena {
+		top: 270px;
+		left: 430px;
+	}
+	#silver_spurs_arena {
+		top: 267px;
+		left: 449px;
+	}
+}/*END MOBILE LANDSCAPE*/
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+
+	body {
+		background-image: none;
+	}
+	header {
+		background: #313131;
+		height: 265px;
+	}
+	#logo {
+		display: none;
+	}
+	nav {
+		width: 100%;
+		clear: both;
+		overflow: visible;
+	}
+	nav ul li {
+		font-size: .85em;
+		float: none;
+	}
+	#marquee_header {
+		float: left;
+		width: 75%;
+		margin-left: 5%;
+	}
+	#marquee_header h1 {
+		font-size: 1.35em;
+	}
+	#marquee_header h2 {
+		font-size: 1.15em;
+	}
+	#marquee_header p {
+		font-size: 1em;
+	}
+	.marquee_container {
+		display: none;
+	}
+	.sub_section_img_container {
+		width: 22%;
+	}
+	#special_offers {
+		clear: left;
+		float: left;
+		font-size: .8em;
+	}
+	.service_subsection {
+		border-right: none;
+		font-size: .8em;
+		width: 50%;
+		clear: right;
+		margin-left: 5%;
+	}
+	#special_offers {
+		margin-left: 5%;
+	}
+	#service_descriptions {
+		width: 80%;
+	}
+	#service_descriptions {
+		width: 100%;
+		margin: 0 auto;
+	}
+	.service_subsection_secondary {
+		width: 80%;
+	}
+	.service_subsection_secondary.divider {
+		border: none;
+	}
+	.services_vehicles_container {float; left;
+		font-size: .85em;
+		padding: 0;
+	}
+	.services_vehicles_container.services_vehicles_page_seperator {
+		border-left: none;
+		float: left;
+	}
+	#copyright {width 100%;
+		margin-left: 5%;
+	}
+	#footer_nav {
+		display: none;
+	}
+	#reservation_form {
+		font-size: .85em;
+	}
+	label {
+		font-size: .85em !important;
+	}
+	#reservation_form input {
+		font-size: .7em !important;
+	}
+	#vehicle {
+		font-size: .7em;
+	}
+	.not_available_on_mobile {
+		display: block;
+	}
+	.map_container {
+		display: none;
+	}
+} /*END MOBILE PORTRAIT*/

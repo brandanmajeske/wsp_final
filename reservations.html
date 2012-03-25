@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<title>Reservations</title>
+		<link rel="stylesheet" href="css/main.css" />
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+	</head>
+	<body>
+		<div class="wrapper">
+			<header>
+				<nav>
+					<ul>
+						<li>
+							<a href="index.html">Home</a>
+						</li>
+						<li>
+							<a href="services.html">Services</a>
+						</li>
+						<li>
+							<a href="rates.html">Rates</a>
+						</li>
+						<li>
+							<a href="vehicles.html">Vehicles</a>
+						</li>
+						<li>
+							<a href="destinations.html">Destinations</a>
+						</li>
+						<li>
+							<a class="current_page" href="reservations.html">Reservations</a>
+						</li>
+					</ul>
+				</nav>
+				<div id="logo_container">
+					<a id="logo" href="index.html"><img src="images/logo.png" /></a>
+				</div>
+			</header>
+		
+		
+			
+			<div class="container">
+			
+			
+			<div id="form_container">
+					
+					<section class="cta">
+					<h1 id="form_header">Reserve your ride today!</h1>		
+					<div id="agent_image_container">
+						<div id="agent_image">
+							<img src="images/photos/csa.jpg"/>
+							<h3>Rates</h3>
+							<p>Our rates vary based on destination, passenger count and type of vehicle. <br />
+								Please see our <a href="rates.html">Rates</a> page for details on pricing.
+							</p>
+							<h3>Contact</h3>
+							<p>Do you have a question or comment for us? <br />
+								Please contact us anytime! <a href="#">Contact Form</a>
+							</p>
+						</div>
+					</section>
+					
+					<section id="form_seperator">
+					<form id="reservation_form" POST="get" >
+						<div class="name">
+							<label>Name</label>
+							<input type="text" id="name_first" title="First Name" placeholder="First Name" autofocus required/>
+							<input type="text" id="name_last" title="Last Name" placeholder="Last Name" required />
+						</div>
+						<div class="email">
+							<label>Email</label>
+							<input type="email" title="Please enter your email address" id="email" placeholder="example@example.com" required/>
+						</div>
+						<div class="phone">
+							<label>Phone</label>
+							<input type="tel" title="Please provide your contact phone number" id="phone" placeholder="555-555-1212" pattern="^\D?(\d{3})\D?\D?(\d{3})\D?(\d{4})$" required />
+						</div>
+						<div class="date_time">
+							<label>Pick-up Date</label>
+							<label id="time_label">Time</label>
+							<input type="text" title="Choose your pick-up date" id="datepicker" placeholder="2012-03-18" required/>
+							<input type="time" title="Choose your pick-up time" id="pickup_time" placeholder="06:00 AM" required/>
+						</div>	
+						
+						<div class="trip">
+							<ul>
+								<li>
+								<label id="round_trip_label">
+								<input type="checkbox" name="round_trip" id="round_trip_button" />
+								Round Trip</label></li> 
+								<li><label id="one_way_label">
+								<input type="checkbox" name="one_way" id="one_way_button" />One-Way</label></li>
+								
+							</ul>
+						</div>
+						
+						<div class="locations">
+							<label id="from_label">Pick-up Location</label>
+							<input id="from" name ="from_location" type="text" list="from_to_suggestions" title="Please enter the location you would like to be picked up from" required/>
+							<label id="to_label">Drop-off Location</label>
+							<input id="to" name="to_location" type="text" list="from_to_suggestions" title="Please enter the location you would like as your destination" required/>
+														
+							<datalist id="from_to_suggestions">
+								<option>Orlando Sanford Airport</option>
+								<option>Orlando Executive Airport</option>
+								<option>Orlando International Airport</option>
+								<option>Orlando Science Center</option>
+								<option>Disney World Resort</option>
+								<option>Universal Orlando Resort</option>
+								<option>Orange County Convention Center</option>
+								<option>Moarriott's Orlando World Center</option>
+								<option>The Peabody Orlando</option>
+								<option>Port of Tampa</option>
+								<option>Port Canaveral</option>
+								<option>Port Manatee</option>
+								<option>Amway Center</option>
+								<option>Kissimmee Sports Arena</option>
+								<option>Silver Spurs Arena</option>
+							</datalist>
+						</div>	
+						<div id="passenger_count">
+							<label>Passengers</label>
+							<input type="number" title="Enter the number of passengers" placeholder="1" required />
+						</div>								
+					
+					
+						
+							<select id="vehicle" name="vehicle" title="Choose a vehicle" required>
+								<option>Airport Shuttle</option>
+								<option>Taxi</option>
+								<option>SUV</option>
+								<option>Sedan</option>
+								<option>Limousine</option>
+								<option>Party Bus</option>
+								<option>Charter Bus</option>
+							</select>
+
+						<input id="submit_button" name="submit" type="submit" value="submit" />	
+	
+
+					</form>
+					</section>
+				</div>
+				</div>
+								<br class="clearfix"/>
+					<section class="section_seperator" id="service_descriptions">
+						<div class="service_subsection_secondary">
+							<h3>Punctual</h3>
+							<p>Most travel time is concluded in under 30 minutes, start to finish, door to door.</p>
+						</div>
+						<div class="service_subsection_secondary divider">
+							<h3>Professional</h3>
+							<p>Our chauffeurs and service representatives are courteous and ready to help.</p>
+						</div>
+						<div class="service_subsection_secondary divider">
+							<h3>Luxurious</h3>
+							<p>All of our vehicles are nicely equipped, clean and include radios and GPS tracking.</p>
+						</div>
+						<div class="service_subsection_secondary divider">
+							<h3>Need a Quote?</h3>
+							<p>Just call our friendly customer service staff waiting to talk to you. <strong>407-855-4600</strong></p>
+						</div>
+					</section>
+								
+					</div><!-- end container -->
+		
+		
+		<!-- end wrapper -->
+		<footer>
+			<div id="footer_container">
+				<ul id="footer_nav">
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="services.html">Services</a>
+					</li>
+					<li>
+						<a href="rates.html">Rates</a>
+					</li>
+					<li>
+						<a href="vehicles.html">Vehicles</a>
+					</li>
+					<li>
+						<a href="destinations.html">Destinations</a>
+					</li>
+					<li>
+						<a href="reservations.html">Reservations</a>
+					</li>
+				</ul>
+				<p id="copyright">
+					&copy;2012 Orlando Tropical Transport
+				</p>
+			</div>
+		</footer>
+	</body>
+</html>
